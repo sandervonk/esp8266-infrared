@@ -58,7 +58,7 @@ install:
   - ls -a
 
 script:
-   - buidSketch $SKETCH
+   - buildSketch $SKETCH
 #  - buildExampleSketch ${SKETCH}
 
 notifications:
