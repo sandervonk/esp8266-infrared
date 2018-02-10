@@ -51,10 +51,11 @@ install:
 #  - arduino --install-library "Adafruit GFX Library"
 #  - git clone https://github.com/cvonk/esp8266-WiFiClientSecureRedirect.git $HOME/Arduino/libraries/esp8266-WiFiClientSecureRedirect
   - mkdir -p $HOME/Arduino/libraries/
-  - ln -s $PWD $HOME/Arduino/libraries/.
-  - git clone https://github.com/cvonk/esp8266-framework.git
-  - git clone https://github.com/cvonk/esp8266-fatal.git
-
+#  - ln -s $PWD $HOME/Arduino/libraries/.
+  - git clone https://github.com/cvonk/esp8266-framework.git $HOME/Arduino/libraries/
+  - git clone https://github.com/cvonk/esp8266-fatal.git $HOME/Arduino/libraries/
+  - ls -l $HOME/Arduino/libraries/
+  
 script:
    - buildSketch $SKETCH
 #  - buildExampleSketch ${SKETCH}
