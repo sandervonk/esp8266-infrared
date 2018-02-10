@@ -1,0 +1,39 @@
+#!/bin/sh
+# based on frater's https://www.dd-wrt.com/phpBB2/viewtopic.php?t=37958
+# adjusted for installation on /jffs (by Coert Vonk)
+# make sure to run "chmod +x" on this script to make it executable
+
+SRCDIR=/jffs/etc/pound 
+CONFDIR=/tmp/pound 
+CONF=${CONFDIR}/pound.cfg 
+mkdir -p ${CONFDIR} 2>/dev/null 
+
+cat ${SRCDIR}/pound.pt1 >${CONF} 
+
+_write_conf () 
+{ 
+ _HOST=`echo ${HOST_NAME} | sed 's/\./\\\./g'` 
+ echo -e "\n\tService \"${HOST_NAME}\"" >>${CONF} 
+ echo -e "\t\tHeadRequire \"^Host:[\\\t ]*${_HOST}$\"" >>${CONF} 
+ echo -e "\t\tBackend" >>${CONF} 
+ echo -e "\t\t\tAddress ${HOST_IP}" >>${CONF} 
+ echo -e "\t\t\tPort 80\n\t\tend\n\tend" >>${CONF} 
+} 
+
+# DISABLED THIS SECTION
+#cat /etc/hosts | grep -v -e 0.0.0.0 -e localhost | while read HOST_ENTRY 
+#do 
+#  HOST_IP=`echo $HOST_ENTRY | awk '{print $1}'` 
+#  HOST_NAME=`echo $HOST_ENTRY | awk '{print $2}'` 
+#
+#  _write_conf 
+#done 
+#cat /tmp/dnsmasq.conf | grep ^address= | grep -v in-addr.arpa | while read HOST_ENTRY 
+#do 
+#  HOST_IP=`echo $HOST_ENTRY | cut -d/ -f3` 
+#  HOST_NAME=`echo $HOST_ENTRY | cut -d/ -f2` 
+#
+#  _write_conf 
+#done 
+
+cat ${SRCDIR}/pound.pt2 >>${CONF} 

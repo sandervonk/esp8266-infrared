@@ -1,0 +1,8 @@
+TimeOut         120 
+Alive           30 
+Control         "/tmp/pound.ctl" 
+
+ListenHTTPS
+        Address 0.0.0.0 
+        Port 443
+	Cert "host.pem"
