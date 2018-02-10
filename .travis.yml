@@ -47,8 +47,6 @@ before_install:
 
 install:
   - arduino --install-library "WiFiManager"
-  - arduino --install-library "ESP8266_Framework"
-  - arduino --install-library "ESP8266_Fatal"
   - arduino --install-library "IRremoteESP8266"
 #  - arduino --install-library "Adafruit GFX Library"
 #  - git clone https://github.com/cvonk/esp8266-WiFiClientSecureRedirect.git $HOME/Arduino/libraries/esp8266-WiFiClientSecureRedirect
