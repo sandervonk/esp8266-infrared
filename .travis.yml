@@ -42,8 +42,6 @@ before_install:
       arduino --verbose-build --verify --board $BOARD $EXAMPLE_SKETCH; 
     }
   - buildSketch() { 
-        echo $PWD/$1/$1.ino
-        ls $PWD/$1
         arduino --verbose-build --verify --board $BOARD $PWD/$1/$1.ino; 
     }
 
@@ -56,7 +54,6 @@ install:
   - ln -s $PWD $HOME/Arduino/libraries/.
   - git clone https://github.com/cvonk/esp8266-framework.git
   - git clone https://github.com/cvonk/esp8266-fatal.git
-  - ls -a
 
 script:
    - buildSketch $SKETCH
