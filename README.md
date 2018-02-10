@@ -7,7 +7,7 @@ Have you ever wondered why you should buy new devices just because the old ones 
 
 Software dependencies
 * [Arduino 1.8.5 IDE](https://www.arduino.cc/)
-* [ESP8266 2..0 board support](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide")
+* [ESP8266 2.4.0 board support](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide")
 * [Library WiFiManager 0.12.0](https://github.com/tzapu/WiFiManager)
 * [Library ESP8266_Framework 1.0.0](https://github.com/cvonk/esp8266-framework)
 * [Library ESP8266_Fatal 1.0.0](https://github.com/cvonk/esp8266-fatal)
