@@ -53,10 +53,8 @@ install:
   - mkdir -p $HOME/Arduino/libraries/
   - ln -s $PWD $HOME/Arduino/libraries/.
   - rm -rf esp8266-fatal-master esp8266-framework-master
-  - wget https://github.com/cvonk/esp8266-fatal/archive/master.zip
-  - unzip master.zip
-  - wget https://github.com/cvonk/esp8266-framework/archive/master.zip
-  - unzip master.zip
+  - wget https://github.com/cvonk/esp8266-fatal/archive/master.zip ; unzip master.zip ; rm master.zip
+  - wget https://github.com/cvonk/esp8266-framework/archive/master.zip ; unzip master.zip ; rm master.zip
   - ls -a
 
 script:
