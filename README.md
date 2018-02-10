@@ -6,20 +6,20 @@ Have you ever wondered why you should buy new devices just because the old ones 
 ![image](dialog.svg)
 
 Software dependencies
-* [Arduino 1.8.5 IDE](https://www.arduino.cc/">Arduino</a></td>
+* [Arduino 1.8.5 IDE](https://www.arduino.cc/)
 * [ESP8266 2..0 board support](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide")
 * [Library WiFiManager 0.12.0](https://github.com/tzapu/WiFiManager)
 * [Library ESP8266_Framework 1.0.0](https://github.com/cvonk/esp8266-framework)
 * [Library ESP8266_Fatal 1.0.0](https://github.com/cvonk/esp8266-fatal)
-* [Library IRremoteESP8266 2.3.1]((https://github.com/markszabo/IRremoteESP8266)
+* [Library IRremoteESP8266 2.3.1](https://github.com/markszabo/IRremoteESP8266)
 
 Hardware dependencies
 * [Infrared Receiver (Vishay TSOP38238)](https://www.mouser.com/ds/2/427/tsop382-531411.pdf)
 * [Infrared Diode 875nm (Everlight EL-SIR333-A)](http://www.everlight.com/file/ProductFile/SIR333-A.pdf)
 * [NPN Transistor (PN2222A)](https://www.mouser.com/ds/2/308/PN2222A-1121407.pdf)
-* [ESP8266 dev board (Feather HUZZAH ESP8266)](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/downloads)
+* [ESP8266 dev board (Feather HUZZAH ESP8266 or equiv.)](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/downloads)
 * Resistor (1k&#x2126; &frac14;W)
 * Resistor (39&#x2126; &frac14;W)
-* [Feather Proto board](https://www.adafruit.com/product/2884)
+* [Feather Proto board or equiv.](https://www.adafruit.com/product/2884)
 
 Continue reading at [coertvonk.com](https://coertvonk.com/sw/embedded/google-home-ifttt-esp8266-integration-23066).
