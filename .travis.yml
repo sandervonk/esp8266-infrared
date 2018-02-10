@@ -42,6 +42,8 @@ before_install:
       arduino --verbose-build --verify --board $BOARD $EXAMPLE_SKETCH; 
     }
   - buildSketch() { 
+        echo $PWD/$1/$1.ino
+        ls $PWD/$1
         arduino --verbose-build --verify --board $BOARD $PWD/$1/$1.ino; 
     }
 
@@ -52,9 +54,8 @@ install:
 #  - git clone https://github.com/cvonk/esp8266-WiFiClientSecureRedirect.git $HOME/Arduino/libraries/esp8266-WiFiClientSecureRedirect
   - mkdir -p $HOME/Arduino/libraries/
   - ln -s $PWD $HOME/Arduino/libraries/.
-  - rm -rf esp8266-fatal-master esp8266-framework-master
-  - wget https://github.com/cvonk/esp8266-fatal/archive/master.zip ; unzip master.zip ; rm master.zip
-  - wget https://github.com/cvonk/esp8266-framework/archive/master.zip ; unzip master.zip ; rm master.zip
+  - git clone https://github.com/cvonk/esp8266-framework.git
+  - git clone https://github.com/cvonk/esp8266-fatal.git
   - ls -a
 
 script:
