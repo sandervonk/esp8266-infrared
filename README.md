@@ -19,7 +19,7 @@ Hardware dependencies
 * [NPN Transistor (PN2222A)](https://www.mouser.com/ds/2/308/PN2222A-1121407.pdf)
 * [ESP8266 dev board (Feather HUZZAH ESP8266 or equiv.)](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/downloads)
 * Resistor (1k&#x2126; &frac14;W)
-* Resistor (39&#x2126; &frac14;W)
+* Resistor (68&#x2126; &frac14;W)
 * [Feather Proto board or equiv.](https://www.adafruit.com/product/2884)
 
 Continue reading at [coertvonk.com](https://coertvonk.com/sw/embedded/google-home-ifttt-esp8266-integration-23066).
