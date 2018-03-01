@@ -5,4 +5,5 @@ Control         "/tmp/pound.ctl"
 ListenHTTPS
         Address 0.0.0.0 
         Port 443
+	xHTTP 1
 	Cert "/jffs/etc/pound/host.pem"
